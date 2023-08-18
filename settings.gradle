@@ -15,3 +15,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "BioBold"
 include ':app'
+
+def opencvsdk='C:\\Users\\sewon\\OpenCV-android-sdk'
+include ':opencv'
+project(':opencv').projectDir = new File(opencvsdk + '/sdk')

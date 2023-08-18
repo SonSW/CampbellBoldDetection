@@ -11,8 +11,6 @@ class OCRCampbell(bitmap: Bitmap) {
     init {
         tess.setImage(bitmap)
         tess.pageSegMode = TessBaseAPI.PageSegMode.PSM_AUTO_OSD
-
-
     }
 
     fun get_boxes() {
